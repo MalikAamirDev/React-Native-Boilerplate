@@ -1,25 +1,23 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import DrawerNavigation from '../drawer';
 import Login from '../../../screens/StackScreens/Login';
 import Signup from '../../../screens/StackScreens/Signup';
-import BottomNavigation from '../Bottom';
+import TabNavigation from '../tab';
+import DrawerNavigation from '../Drawer';
 
 const Stack = createNativeStackNavigator();
 
 const StackNavigation = () => {
   return (
-    <>
-      <Stack.Navigator>
-        <Stack.Screen component={Login} name="Login" />
-        <Stack.Screen component={Signup} name="Signup" />
-        {/* <Stack.Screen
-          options={{headerShown: false}}
-          component={BottomNavigation}
-          name="Bottom"
-        /> */}
-      </Stack.Navigator>
-    </>
+    <Stack.Navigator>
+      <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="Signup" component={Signup} />
+      <Stack.Screen
+        options={{headerShown: false}}
+        name="Bottom"
+        component={TabNavigation}
+      />
+    </Stack.Navigator>
   );
 };
 

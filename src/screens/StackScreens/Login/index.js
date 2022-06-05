@@ -6,14 +6,15 @@ const Login = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Login</Text>
-      {/* <Button
+      <Button
         title="Go to Bottom Tab Screen"
         onPress={() =>
           navigation.navigate('Bottom', {
-            screen: 'Home',
+            // screen: 'Bottom',
           })
         }
-      /> */}
+      />
+      <Button title="Signup" onPress={() => navigation.navigate('Signup')} />
     </View>
   );
 };

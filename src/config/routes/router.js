@@ -1,16 +1,11 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-// import DrawerNavigation from './drawer';
-import StackNavigation from './Stack';
-import DrawerNavigation from './drawer';
-import BottomNavigation from './Bottom';
+import StackNavigation from './stack';
 
 export default function Router() {
   return (
     <NavigationContainer>
-      {/* <DrawerNavigation /> */}
-      {/* <StackNavigation /> */}
-      <BottomNavigation />
+      <StackNavigation />
     </NavigationContainer>
   );
 }
