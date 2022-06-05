@@ -9,8 +9,8 @@ export default function Router() {
   return (
     <NavigationContainer>
       {/* <DrawerNavigation /> */}
-      {/* <StackNavigation /> */}
-      <BottomNavigation />
+      <StackNavigation />
+      {/* <BottomNavigation /> */}
     </NavigationContainer>
   );
 }

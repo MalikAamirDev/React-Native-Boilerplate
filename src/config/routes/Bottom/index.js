@@ -1,4 +1,3 @@
-import {View, Text} from 'react-native';
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from '../../../screens/BottomScreens/Home';
@@ -10,15 +9,9 @@ const BottomNavigation = () => {
   return (
     <>
       <Tab.Navigator
-      // screenOptions={{
-      //   initialRouteName: 'Home',
-      // }}
-      >
-        {/* <Tab.Screen
-          options={{shownHeader: false}}
-          name="Drawer"
-          component={DrawerNavigation}
-        /> */}
+        screenOptions={{
+          initialRouteName: 'Home',
+        }}>
         <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="More" component={More} />
       </Tab.Navigator>

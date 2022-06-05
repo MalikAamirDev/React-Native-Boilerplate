@@ -13,11 +13,11 @@ const StackNavigation = () => {
       <Stack.Navigator>
         <Stack.Screen component={Login} name="Login" />
         <Stack.Screen component={Signup} name="Signup" />
-        {/* <Stack.Screen
+        <Stack.Screen
           options={{headerShown: false}}
           component={BottomNavigation}
           name="Bottom"
-        /> */}
+        />
       </Stack.Navigator>
     </>
   );
