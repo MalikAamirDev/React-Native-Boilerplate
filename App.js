@@ -1,12 +1,8 @@
-import {View, Text} from 'react-native';
 import React from 'react';
+import Router from './src/config/routes/router';
 
 const App = () => {
-  return (
-    <View>
-      <Text style={{fontSize: 48}}>App</Text>
-    </View>
-  );
+  return <Router />;
 };
 
 export default App;
