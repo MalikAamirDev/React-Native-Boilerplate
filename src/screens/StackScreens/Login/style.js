@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {POPPINS_REGULAR} from '../../../app/AppTheme';
 
 const styles = StyleSheet.create({
   container: {
@@ -7,8 +8,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    fontSize: 22,
+    fontSize: 20,
     color: '#434343',
+    fontFamily: POPPINS_REGULAR,
   },
 });
 
