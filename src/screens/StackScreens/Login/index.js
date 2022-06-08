@@ -2,8 +2,12 @@ import {View, Text, Button} from 'react-native';
 import React from 'react';
 import styles from './style';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import {useSelector} from 'react-redux';
 
 const Login = ({navigation}) => {
+  const state = useSelector(state => state);
+  const {auth} = state;
+  console.log('auth ==>', auth);
   return (
     <View style={styles.container}>
       <Ionicons name="ios-person-outline" size={28} color="black" />

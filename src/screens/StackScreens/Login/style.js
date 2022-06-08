@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {POPPINS_REGULAR} from '../../../app/AppTheme';
+import {POPPINS_MEDIUM} from '../../../Theme/fonts';
 
 const styles = StyleSheet.create({
   container: {
@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     color: '#434343',
-    fontFamily: POPPINS_REGULAR,
+    fontFamily: POPPINS_MEDIUM,
   },
 });
 
