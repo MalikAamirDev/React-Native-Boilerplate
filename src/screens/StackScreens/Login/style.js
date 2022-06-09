@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {HEADING_COLOR} from '../../../Theme/color';
 import {POPPINS_MEDIUM} from '../../../Theme/fonts';
 
 const styles = StyleSheet.create({
@@ -8,8 +9,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    fontSize: 20,
-    color: '#434343',
+    fontSize: 22,
+    color: HEADING_COLOR,
     fontFamily: POPPINS_MEDIUM,
   },
 });

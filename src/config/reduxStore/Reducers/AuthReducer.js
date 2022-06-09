@@ -24,16 +24,12 @@ const AuthReducer = createSlice({
   initialState,
   reducers: {
     signinFromAsyncStorage: (state, action) => {
-      let res = action.payload;
-      if (res != null && res != undefined) {
-        state.userData = action.payload;
-        (state.status = 'ok'), (state.error = 'none');
-      } else {
-        (state.status = 'error'), (state.error = 'data null or undefine');
-      }
+      state.userData = action.payload;
+      state.status = 'ok';
+      state.error = 'none';
     },
     removeSigninFromAsyncStorage: (state, action) => {
-      state.userData = action.payload;
+      state.userData = {};
     },
   },
   extraReducers: {
