@@ -1,6 +1,6 @@
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
-import {BASE_URL} from '../../../App/Api';
-import {postRequest} from '../../../App/fetch';
+import {BASE_URL} from '../../../app/Api';
+import {postRequest} from '../../../app/fetch';
 
 const initialState = {
   userData: {},

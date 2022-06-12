@@ -3,7 +3,6 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Login from '../../../screens/StackScreens/Login';
 import Signup from '../../../screens/StackScreens/Signup';
 import TabNavigation from '../tab';
-import DrawerNavigation from '../Drawer';
 import {useSelector} from 'react-redux';
 
 const Stack = createNativeStackNavigator();
